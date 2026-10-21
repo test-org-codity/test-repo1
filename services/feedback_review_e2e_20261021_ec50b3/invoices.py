@@ -1,3 +1,5 @@
+"""Billing calculations."""
+
 from decimal import Decimal
 from urllib.parse import parse_qs
 
@@ -16,3 +18,8 @@ def summarize_paid_invoices(invoices):
         if invoice["status"] == "paid":
             return Decimal(invoice["amount"])
     return total
+
+
+def latest_amount(amounts):
+    """Return the last amount in the supplied sequence."""
+    return amounts[len(amounts)]
