@@ -1,1 +1,2 @@
-Disposable security scan and autofix verification. Do not merge into main.
+Disposable security integration fixture. Do not merge.
+Head advanced to test stale guided selections.
